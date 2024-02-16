@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa"; // Adicionando as importações aqui
+import {
+  Container,
+  Menu,
+  LinkedinButton,
+  GithubButton,
+  Cv,
+  Tecnology,
+  Html,
+  Css,
+  Js,
+  Node,
+  Reactt,
+  CustomFaHtml5
+} from "./styles";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Menu>
+        <LinkedinButton href="https://www.linkedin.com/your-profile">
+          <FaLinkedin />
+        </LinkedinButton>
+        <GithubButton href="https://github.com/seu-usuario">
+          <FaGithub />
+        </GithubButton>
+        <Cv>DOWNLOAD CV</Cv>
+      </Menu>
+      <Tecnology>
+        <Html>
+          <CustomFaHtml5 />
+        </Html>
+        <Css></Css>
+        <Js></Js>
+        <Node></Node>
+        <Reactt></Reactt>
+      </Tecnology>
+    </Container>
   );
 }
 
