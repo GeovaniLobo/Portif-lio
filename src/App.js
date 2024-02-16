@@ -19,10 +19,10 @@ function App() {
   return (
     <Container>
       <Menu>
-        <LinkedinButton href="https://www.linkedin.com/your-profile">
+        <LinkedinButton href="https://www.linkedin.com/in/geovanilobo/">
           <FaLinkedin />
         </LinkedinButton>
-        <GithubButton href="https://github.com/seu-usuario">
+        <GithubButton href="https://github.com/GeovaniLobo">
           <FaGithub />
         </GithubButton>
         <Cv>DOWNLOAD CV</Cv>
